@@ -1,0 +1,16 @@
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+int vvod (string xyz, string ab)
+{
+ Console.Write(" Введите координату  " + xyz + "  точки   " + ab);
+ return Convert.ToInt32(Console.ReadLine());
+}
+int x1 = vvod("x", "A");
+int y1 = vvod("y", "A");
+int z1 = vvod("z", "A");
+int x2 = vvod("x", "B");
+int y2 = vvod("y", "B");
+int z2 = vvod("z", "B");
+double dlina = Math.Round (Math.Sqrt(Math.Pow((x2-x1), 2) +  Math.Pow((y2-y1), 2) +  Math.Pow((z2-z1), 2)));
+Console.WriteLine("Длина отрезка " + dlina );
+
